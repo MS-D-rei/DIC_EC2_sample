@@ -60,6 +60,7 @@ namespace :deploy do
   task :restart do
     on roles(:app) do
       invoke 'unicorn:restart'
+    end
   end
 
   desc 'Create database'
